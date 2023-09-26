@@ -1,0 +1,111 @@
+Here are Python programs for each of the tasks you've mentioned:
+
+1. Find the Least Common Multiple (LCM) of two numbers:
+```python
+# Function to find the Greatest Common Divisor (GCD) using Euclidean algorithm
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+# Input two numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+# Calculate LCM using the formula: LCM = (num1 * num2) / GCD(num1, num2)
+lcm = (num1 * num2) // gcd(num1, num2)
+
+# Display the LCM
+print(f"The LCM of {num1} and {num2} is {lcm}")
+```
+
+2. Find the Highest Common Factor (HCF) of two numbers:
+```python
+# Function to find the Greatest Common Divisor (GCD) using Euclidean algorithm
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+# Input two numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+# Calculate and display the HCF (GCD) of the two numbers
+hcf = gcd(num1, num2)
+print(f"The HCF of {num1} and {num2} is {hcf}")
+```
+
+3. Convert a decimal number to binary, octal, and hexadecimal:
+```python
+# Input a decimal number
+decimal_num = int(input("Enter a decimal number: "))
+
+# Convert to binary, octal, and hexadecimal
+binary_num = bin(decimal_num)
+octal_num = oct(decimal_num)
+hexadecimal_num = hex(decimal_num)
+
+# Display the conversions
+print(f"Binary: {binary_num}")
+print(f"Octal: {octal_num}")
+print(f"Hexadecimal: {hexadecimal_num}")
+```
+
+4. Find the ASCII value of a character:
+```python
+# Input a character
+char = input("Enter a character: ")
+
+# Get the ASCII value
+ascii_value = ord(char)
+
+# Display the ASCII value
+print(f"The ASCII value of '{char}' is {ascii_value}")
+```
+
+5. Make a simple calculator with four basic mathematical operations:
+```python
+# Function to perform addition
+def add(x, y):
+    return x + y
+
+# Function to perform subtraction
+def subtract(x, y):
+    return x - y
+
+# Function to perform multiplication
+def multiply(x, y):
+    return x * y
+
+# Function to perform division
+def divide(x, y):
+    if y == 0:
+        return "Cannot divide by zero"
+    return x / y
+
+# Input two numbers and the operation
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print("Select operation:")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = input("Enter choice (1/2/3/4): ")
+
+if choice == '1':
+    print("Result:", add(num1, num2))
+elif choice == '2':
+    print("Result:", subtract(num1, num2))
+elif choice == '3':
+    print("Result:", multiply(num1, num2))
+elif choice == '4':
+    print("Result:", divide(num1, num2))
+else:
+    print("Invalid choice")
+```
+
+These Python programs cover the tasks you specified. You can run them in a Python environment to check the results.
